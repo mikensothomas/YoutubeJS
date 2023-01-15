@@ -1,4 +1,4 @@
-var ingredientes = [
+const ingredientes = [
     {
         nome : 'aborada',
         valor: 2.50,
