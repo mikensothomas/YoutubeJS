@@ -1,16 +1,44 @@
 var ingredientes = [
     {
-        nome : 'Alface',
-        valor: 2.50
+        nome : 'aborada',
+        valor: 2.50,
+        img: 'aborada.jpg'
     },
     {
-        nome: 'Batata',
-        valor: 3.5
+        nome : 'acelgas',
+        valor: 2.50,
+        img: 'acelgas.jpg'
     },
     {
-        nome: 'Batata palha',
-        valor: 2
-    }
+        nome : 'carne',
+        valor: 2.50,
+        img: 'carne.jpg'
+    },
+    {
+        nome : 'aborada',
+        valor: 2.50,
+        img: 'aborada.jpg'
+    },
+    {
+        nome : 'aborada',
+        valor: 2.50,
+        img: 'aborada.jpg'
+    },
+    {
+        nome : 'aborada',
+        valor: 2.50,
+        img: 'aborada.jpg'
+    },
+    {
+        nome : 'aborada',
+        valor: 2.50,
+        img: 'aborada.jpg'
+    },
+    {
+        nome : 'aborada',
+        valor: 2.50,
+        img: 'aborada.jpg'
+    },
 ];
 
 export default ingredientes;
