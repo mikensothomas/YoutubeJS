@@ -1,51 +1,43 @@
-function captizalizarovo(colocao, atributo){
-    if(typeof colocao[0] == 'object'){
-        var resultado = colocao.map(function(obj){
-            //console.log(obj[atributo]);
-            var letraInicial = obj[atributo].charAt(0).toUpperCase();
-            var restoTexto = obj[atributo].slice(1);
-            obj[atributo] = letraInicial + restoTexto;
-            return obj;
-        });
-        console.log(resultado);
-    }
-}
-
-function FnCapitalizar(vetor){
-
-    var modificado = [];
-
-    for ( var i = 0; i < vetor.length; i++){
-        var letraInicial = vetor[i].charAt(0).toUpperCase();
-        var restoTexto = vetor[i].slice(1);
-        var resultado = letraInicial + restoTexto;
-        console.log(resultado);
-    
-        modificado[i] = resultado;
-    }
-    
-    return modificado;
-}
-
-function FnOrdenar(vetor){
-    var ordenado = vetor.sort(function(a,b){
-        return a.localeCompare(b);
-    });
-}
-
-function FnCaixaAlta(vetor){
-    var modificado = [];
-
-       for ( var i = 0; i < vetor.length; i++){
-            modificado[i] = vetor[i].toUpperCase();
+function fnCapitalizar(colecao, attr){
+    if (colecao.length > 0){
+        if (typeof colecao[0] == 'object' && attr){
+            colecao.map(item => item[attr] = item[attr].charAt(0).toUpperCase() + item[attr].slice(1));
+        }else{
+            colecao.map(item => item = item.charAt(0).toUpperCase() + item.slice(1));
         }
         
-    return modificado;
+        return colecao;
+    }
+}
+
+function fnCaixaAlta(colecao, attr){
+    if (colecao.length > 0){
+        if (typeof colecao[0] == 'object' && attr){
+            colecao.map(item => item[attr] = item[attr].toUpperCase());
+        }else{
+            colecao.map(item => item = item.toUpperCase());
+        }
+        
+        return colecao;
+    }
+}
+
+function fnOrdenar(colecao, attr){    
+    return attr ?
+        colecao.sort(function(a,b){
+            return typeof a[attr] == 'number' ?
+                a[attr] - b[attr] :
+                a[attr].localeCompare(b[attr])
+        }):
+        colecao.sort(function(a,b){
+            return typeof a == 'number' ?
+                a - b :
+                a.localeCompare(b)
+        });
 }
 
 export default {
-    capitalizar: FnCapitalizar,
-    ordenar : FnOrdenar,
-    caixaAlta : FnCaixaAlta,
-    capitalizarNovo : captizalizarovo
+    capitalizar: fnCapitalizar,
+    ordenar: fnOrdenar,
+    caixaAlta: fnCaixaAlta
 };

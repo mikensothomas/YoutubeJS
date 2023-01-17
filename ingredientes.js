@@ -1,13 +1,13 @@
 const ingredientes = [
     {
-        nome : 'aborada',
+        nome : 'cebola_roxa',
         valor: 2.50,
-        img: 'aborada.jpg'
+        img: 'cebola_roxa.jpg'
     },
     {
-        nome : 'acelgas',
+        nome : 'couve',
         valor: 2.50,
-        img: 'acelgas.jpg'
+        img: 'couve.jpg'
     },
     {
         nome : 'carne',
