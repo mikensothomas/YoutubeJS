@@ -2,9 +2,10 @@ import modificador from "./modificador.js";
 import ingredientes from "./ingredientes.js";
 
 let ingerdientesOrdenados = modificador.ordenar(ingredientes, 'nome');
+let ingredientesCapitaluzados = modificador.capitalizar(ingredientes, 'nome');
 let contenairIngredientes = document.getElementById('container-ingredientes');
 
-for(let ingrediente of ingerdientesOrdenados){
+for(let ingrediente of ingredientesCapitaluzados){
     let texttoHTML =`
         <div class="ingredientes">
             <img src="img/${ingrediente.img}" />

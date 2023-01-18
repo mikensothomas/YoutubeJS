@@ -5,9 +5,9 @@ const ingredientes = [
         img: 'cebola_roxa.jpg'
     },
     {
-        nome : 'couve',
+        nome : 'carne',
         valor: 2.50,
-        img: 'couve.jpg'
+        img: 'carne.jpg'
     },
     {
         nome : 'carne',
@@ -15,30 +15,55 @@ const ingredientes = [
         img: 'carne.jpg'
     },
     {
-        nome : 'aborada',
+        nome : 'carne',
         valor: 2.50,
-        img: 'aborada.jpg'
+        img: 'carne.jpg'
     },
     {
-        nome : 'aborada',
+        nome : 'carne',
         valor: 2.50,
-        img: 'aborada.jpg'
+        img: 'carne.jpg'
     },
     {
-        nome : 'aborada',
+        nome : 'carne',
         valor: 2.50,
-        img: 'aborada.jpg'
+        img: 'carne.jpg'
     },
     {
-        nome : 'aborada',
+        nome : 'carne',
         valor: 2.50,
-        img: 'aborada.jpg'
+        img: 'carne.jpg'
     },
     {
-        nome : 'aborada',
+        nome : 'carne',
         valor: 2.50,
-        img: 'aborada.jpg'
+        img: 'carne.jpg'
     },
+    {
+        nome : 'carne',
+        valor: 2.50,
+        img: 'carne.jpg'
+    },
+    {
+        nome : 'carne',
+        valor: 2.50,
+        img: 'carne.jpg'
+    },
+    {
+        nome : 'carne',
+        valor: 2.50,
+        img: 'carne.jpg'
+    },
+    {
+        nome : 'carne',
+        valor: 2.50,
+        img: 'carne.jpg'
+    },
+    {
+        nome : 'carne',
+        valor: 2.50,
+        img: 'carne.jpg'
+    }
 ];
 
 export default ingredientes;

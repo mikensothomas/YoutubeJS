@@ -6,7 +6,7 @@ function fnCapitalizar(colecao, attr){
             colecao.map(item => item = item.charAt(0).toUpperCase() + item.slice(1));
         }
         
-        return colecao;
+      return colecao;
     }
 }
 
